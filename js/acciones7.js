@@ -1,14 +1,14 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-    document.addEventListener('deviceready',function(){
+    document.addEventListener("deviceready",function(){
 		
-		$('#izquierda').on('svipeleft',function(){
+		$('#izquierda').on("swipeleft",function(){
 			navigator.notification.alert("Deslizo a la izquierda",function(){"Aplicacion7","Aceptar"});
 			
 });
 
-$('#derecha').on('sviperight',function(){
+$('#derecha').on("swiperight",function(){
 	navigator.notification.confirm("¿Que quiere hacer?",function(opt){
 		switch(opt)
 		{
@@ -17,7 +17,7 @@ $('#derecha').on('sviperight',function(){
 			break;
 			
 			case 2:
-			navigator.notification.vibrar(1000);
+			navigator.notification.vibrate(1000);
 			break;
 			
 		}
